@@ -48,19 +48,23 @@ app.addEventListener('click',(e)=>{
 
 const VerificationsCards = ()=>{
     if(ArrayCard.length>1){
+
+
         if(ArrayFruit[0] === ArrayFruit[1]){
             ArrayCard=""
             ArrayFruit=""
         }else{
-            setTimeout(() => {
+            setTimeout(() => { 
+
                 ArrayCard[0].classList.remove('rotate')
                 ArrayCard[1].classList.remove('rotate')
+                ArrayCard[2].classList.remove('rotate')
                 ArrayCard=""
                 ArrayFruit=""
             }, 800);
         }
     }
-}
+  }
 
 
 const ramdon = () => {
